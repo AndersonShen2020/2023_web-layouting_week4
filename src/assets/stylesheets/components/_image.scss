@@ -1,0 +1,24 @@
+.image {
+  object-fit: cover;
+  border-radius: 40px;
+  width: 162px;
+  height: 162px;
+
+  &-discord:hover {
+    box-shadow:
+      0 0 16px 3px rgb(144 148 255 / 90%),
+      0 4px 4px 0 rgb(0 0 0 / 25%);
+  }
+
+  &-instagram:hover {
+    box-shadow:
+      0 0 16px 3px rgb(211 41 137 / 90%),
+      0 4px 4px 0 rgb(0 0 0 / 25%);
+  }
+
+  &-message:hover {
+    box-shadow:
+      0 0 16px 3px rgb(0 166 51 / 90%),
+      0 4px 4px 0 rgb(0 0 0 / 25%);
+  }
+}

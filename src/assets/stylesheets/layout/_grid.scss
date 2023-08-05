@@ -1,0 +1,228 @@
+// 格線系統
+.container {
+  /* 1296 + 24 = 1320 */
+  max-width: 1320px;
+  margin: 0 auto;
+
+  /* 左右 padding */
+  padding: 0 calc(var(--gutter) / 2);
+}
+
+.row {
+  display: flex;
+
+  // 給 margin 設定 -12px，來將 col 多出來的 padding 抵銷掉
+  margin-left: calc(var(--gutter) / 2 * -1);
+  margin-right: calc(var(--gutter) / 2 * -1);
+
+  // 給 row 中所有 col 增加 padding 作為 gutter
+  & > * {
+    padding-left: calc(var(--gutter) / 2);
+    padding-right: calc(var(--gutter) / 2);
+  }
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  width: 8.333%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.666%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.333%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  width: 41.666%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.333%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.666%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  width: 83.333%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  width: 91.666%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* md 是 middle，在這裡是示意為平板寬度 */
+
+/* 在 iPad 直式下變更樣式 */
+@media (width <= 992px) {
+  .container {
+    /* 696 + 24 = 720 */
+    max-width: 720px;
+  }
+
+  .col-md-1 {
+    flex: 0 0 auto;
+    width: 8.333%;
+  }
+
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 16.666%;
+  }
+
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.333%;
+  }
+
+  .col-md-5 {
+    flex: 0 0 auto;
+    width: 41.666%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-md-7 {
+    flex: 0 0 auto;
+    width: 58.333%;
+  }
+
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.666%;
+  }
+
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-md-10 {
+    flex: 0 0 auto;
+    width: 83.333%;
+  }
+
+  .col-md-11 {
+    flex: 0 0 auto;
+    width: 91.666%;
+  }
+
+  .col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  /* 768px 以下時加入 margin-bottom: 24px;，讓垂直排列的元素間隔 24px */
+  .mb-md-6 {
+    margin-bottom: 24px;
+  }
+}
+
+/* sm 是 small，在這裡是示意為手機寬度 */
+
+/* 在 iPhone11 直式下變更樣式 */
+@media (width <= 767px) {
+  .container {
+    /* 348 + 24 = 372 */
+    max-width: 372px;
+  }
+
+  .col-sm-1 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-sm-2 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-sm-3 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  //   .col-sm-5 {
+  //     flex: 0 0 auto;
+  //     width: 41.666%;
+  //   }
+
+  //   .col-sm-6 {
+  //     flex: 0 0 auto;
+  //     width: 50%;
+  //   }
+
+  //   .col-sm-7 {
+  //     flex: 0 0 auto;
+  //     width: 58.333%;
+  //   }
+
+  //   .col-sm-8 {
+  //     flex: 0 0 auto;
+  //     width: 66.666%;
+  //   }
+
+  //   .col-sm-9 {
+  //     flex: 0 0 auto;
+  //     width: 75%;
+  //   }
+
+  //   .col-sm-10 {
+  //     flex: 0 0 auto;
+  //     width: 83.333%;
+  //   }
+
+  //   .col-sm-11 {
+  //     flex: 0 0 auto;
+  //     width: 91.666%;
+  //   }
+
+  //   .col-sm-12 {
+  //     flex: 0 0 auto;
+  //     width: 100%;
+  //   }
+}
