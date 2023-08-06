@@ -23,7 +23,7 @@ header {
   }
 }
 
-@media (width <= 767px) {
+@include mobile {
   header {
     padding: 0;
 

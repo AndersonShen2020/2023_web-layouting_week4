@@ -48,76 +48,33 @@
 
 // margin
 
-.ml-1 {
-  margin-left: 4px;
-}
+$margin-unit: 4px;
+$margin-max: 20;
 
-.ml-5 {
-  margin-left: 20px;
-}
-
-.ml-6 {
-  margin-left: 24px;
+@for $i from 1 through $margin-max {
+  .ml-#{$i} {
+    margin-left: $i * $margin-unit;
+  }
+  .mr-#{$i} {
+    margin-right: $i * $margin-unit;
+  }
+  .mt-#{$i} {
+    margin-top: $i * $margin-unit;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * $margin-unit;
+  }
+  .mx-#{$i} {
+    margin: 0 $i * $margin-unit;
+  }
 }
 
 .ml-auto {
   margin-left: auto;
 }
 
-.mr-4 {
-  margin-right: 16px;
-}
-
-.mr-5 {
-  margin-right: 20px;
-}
-
-.mr-6 {
-  margin-right: 24px;
-}
-
-.mr-8 {
-  margin-right: 32px;
-}
-
-.mr-12 {
-  margin-right: 48px;
-}
-
 .mr-auto {
   margin-right: auto;
-}
-
-.mt-4 {
-  margin-top: 16px;
-}
-
-.mb-2 {
-  margin-bottom: 8px;
-}
-
-.mb-4 {
-  margin-bottom: 16px;
-}
-
-.mb-6 {
-  margin-bottom: 24px;
-}
-
-.mb-28 {
-  margin-bottom: 28px;
-}
-
-.mb-48 {
-  margin-bottom: 48px;
-}
-
-.mx-5 {
-  margin: 0 20px;
-}
-
-.mr-md-4 {
-  margin-right: 16px;
 }
 
 // padding
@@ -130,7 +87,7 @@
   padding: 16px 0;
 }
 
-.py-80 {
+.py-20 {
   padding: 80px 0;
 }
 
@@ -220,7 +177,7 @@
   box-shadow: 0 2px 6px #00000029;
 }
 
-@media (width <= 992px) {
+@include pad {
   .flex-md-column {
     flex-direction: column;
   }
@@ -233,12 +190,16 @@
     margin-bottom: 24px;
   }
 
+  .mr-md-4 {
+    margin-right: 16px;
+  }
+
   .fz-md-16 {
     font-size: 16px;
   }
 }
 
-@media (width <= 767px) {
+@include mobile {
   .flex-sm-column {
     flex-direction: column;
   }

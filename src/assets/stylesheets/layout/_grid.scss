@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // 格線系統
 .container {
   /* 1296 + 24 = 1320 */
@@ -22,133 +24,31 @@
   }
 }
 
-.col-1 {
-  flex: 0 0 auto;
-  width: 8.333%;
-}
+$max-lg: 12;
+$max-md: 12;
+$max-sm: 4;
 
-.col-2 {
-  flex: 0 0 auto;
-  width: 16.666%;
-}
-
-.col-3 {
-  flex: 0 0 auto;
-  width: 25%;
-}
-
-.col-4 {
-  flex: 0 0 auto;
-  width: 33.333%;
-}
-
-.col-5 {
-  flex: 0 0 auto;
-  width: 41.666%;
-}
-
-.col-6 {
-  flex: 0 0 auto;
-  width: 50%;
-}
-
-.col-7 {
-  flex: 0 0 auto;
-  width: 58.333%;
-}
-
-.col-8 {
-  flex: 0 0 auto;
-  width: 66.666%;
-}
-
-.col-9 {
-  flex: 0 0 auto;
-  width: 75%;
-}
-
-.col-10 {
-  flex: 0 0 auto;
-  width: 83.333%;
-}
-
-.col-11 {
-  flex: 0 0 auto;
-  width: 91.666%;
-}
-
-.col-12 {
-  flex: 0 0 auto;
-  width: 100%;
+@for $i from 1 through $max-lg {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: math.div($i, $max-lg) * 100%;
+  }
 }
 
 /* md 是 middle，在這裡是示意為平板寬度 */
 
 /* 在 iPad 直式下變更樣式 */
-@media (width <= 992px) {
+@include pad {
   .container {
     /* 696 + 24 = 720 */
     max-width: 720px;
   }
 
-  .col-md-1 {
-    flex: 0 0 auto;
-    width: 8.333%;
-  }
-
-  .col-md-2 {
-    flex: 0 0 auto;
-    width: 16.666%;
-  }
-
-  .col-md-3 {
-    flex: 0 0 auto;
-    width: 25%;
-  }
-
-  .col-md-4 {
-    flex: 0 0 auto;
-    width: 33.333%;
-  }
-
-  .col-md-5 {
-    flex: 0 0 auto;
-    width: 41.666%;
-  }
-
-  .col-md-6 {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-
-  .col-md-7 {
-    flex: 0 0 auto;
-    width: 58.333%;
-  }
-
-  .col-md-8 {
-    flex: 0 0 auto;
-    width: 66.666%;
-  }
-
-  .col-md-9 {
-    flex: 0 0 auto;
-    width: 75%;
-  }
-
-  .col-md-10 {
-    flex: 0 0 auto;
-    width: 83.333%;
-  }
-
-  .col-md-11 {
-    flex: 0 0 auto;
-    width: 91.666%;
-  }
-
-  .col-md-12 {
-    flex: 0 0 auto;
-    width: 100%;
+  @for $i from 1 through $max-md {
+    .col-md-#{$i} {
+      flex: 0 0 auto;
+      width: math.div($i, $max-md) * 100%;
+    }
   }
 
   /* 768px 以下時加入 margin-bottom: 24px;，讓垂直排列的元素間隔 24px */
@@ -160,69 +60,16 @@
 /* sm 是 small，在這裡是示意為手機寬度 */
 
 /* 在 iPhone11 直式下變更樣式 */
-@media (width <= 767px) {
+@include mobile {
   .container {
     /* 348 + 24 = 372 */
     max-width: 372px;
   }
 
-  .col-sm-1 {
-    flex: 0 0 auto;
-    width: 25%;
+  @for $i from 1 through $max-sm {
+    .col-sm-#{$i} {
+      flex: 0 0 auto;
+      width: math.div($i, $max-sm) * 100%;
+    }
   }
-
-  .col-sm-2 {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-
-  .col-sm-3 {
-    flex: 0 0 auto;
-    width: 75%;
-  }
-
-  .col-sm-4 {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-
-  //   .col-sm-5 {
-  //     flex: 0 0 auto;
-  //     width: 41.666%;
-  //   }
-
-  //   .col-sm-6 {
-  //     flex: 0 0 auto;
-  //     width: 50%;
-  //   }
-
-  //   .col-sm-7 {
-  //     flex: 0 0 auto;
-  //     width: 58.333%;
-  //   }
-
-  //   .col-sm-8 {
-  //     flex: 0 0 auto;
-  //     width: 66.666%;
-  //   }
-
-  //   .col-sm-9 {
-  //     flex: 0 0 auto;
-  //     width: 75%;
-  //   }
-
-  //   .col-sm-10 {
-  //     flex: 0 0 auto;
-  //     width: 83.333%;
-  //   }
-
-  //   .col-sm-11 {
-  //     flex: 0 0 auto;
-  //     width: 91.666%;
-  //   }
-
-  //   .col-sm-12 {
-  //     flex: 0 0 auto;
-  //     width: 100%;
-  //   }
 }

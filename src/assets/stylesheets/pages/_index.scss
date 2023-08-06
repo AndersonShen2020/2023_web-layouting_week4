@@ -15,11 +15,11 @@
     margin-top: 4px;
   }
 
-  @media (width <= 992px) {
+  @include pad {
     background-image: url("@/assets/img/home-header-sm.png");
   }
 
-  @media (width <= 767px) {
+  @include mobile {
     padding: 144px 0;
 
     a {
