@@ -51,4 +51,8 @@ h3 {
 .title-sub {
   padding-left: 16px;
   border-left: 8px solid #9f1213;
+
+  @include mobile {
+    margin-left: 13px;
+  }
 }
