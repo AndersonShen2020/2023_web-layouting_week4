@@ -49,7 +49,7 @@
 // margin
 
 $margin-unit: 4px;
-$margin-max: 20;
+$margin-max: 25;
 
 @for $i from 1 through $margin-max {
   .ml-#{$i} {
@@ -78,6 +78,10 @@ $margin-max: 20;
 }
 
 // padding
+
+.pl-4 {
+  padding-left: 4px;
+}
 
 .pr-0 {
   padding-right: 0;
@@ -161,12 +165,20 @@ $margin-max: 20;
   font-size: 20px;
 }
 
+.fz-24 {
+  font-size: 24px;
+}
+
 .fz-48 {
   font-size: 48px;
 }
 
 .fz-64 {
   font-size: 64px;
+}
+
+.fw-bold {
+  font-weight: bold;
 }
 
 .fs-italic {
