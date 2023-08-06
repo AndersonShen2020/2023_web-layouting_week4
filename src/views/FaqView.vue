@@ -2,9 +2,9 @@
   <div class="mt-24 mb-20">
     <div class="container">
       <div class="row flex-column text-black">
-        <h2 class="pl-4">常見問題</h2>
+        <h2 class="title-sub">常見問題</h2>
         <div class="col-2 mt-8">
-          <p class="fz-24">我想詢問配鏡問題</p>
+          <p class="fz-24 fw-bold">我想詢問配鏡問題</p>
         </div>
         <div class="col-8 mt-6">
           <p class="fz-20 fw-bold">Q1.請問可否自備鏡框單配鏡片？</p>
