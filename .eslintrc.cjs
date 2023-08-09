@@ -1,25 +1,24 @@
 /* eslint-env node */
-require("@rushstack/eslint-patch/modern-module-resolution");
+require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {
   root: true,
-  parser: "vue-eslint-parser",
+  parser: 'vue-eslint-parser',
   extends: [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended",
-    "prettier",
-    "@vue/eslint-config-prettier/skip-formatting",
-    "plugin:prettier/recommended",
+    'plugin:vue/vue3-essential',
+    'eslint:recommended',
+    '@vue/eslint-config-prettier/skip-formatting',
+    'prettier'
   ],
   parserOptions: {
-    ecmaVersion: "latest",
+    ecmaVersion: 'latest'
   },
   rules: {
-    "vue/multi-word-component-names": [
-      "error",
+    'vue/multi-word-component-names': [
+      'error',
       {
-        ignores: ["header", "footer", "index"],
-      },
-    ],
-  },
-};
+        ignores: ['header', 'footer', 'index']
+      }
+    ]
+  }
+}
