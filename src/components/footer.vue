@@ -1,7 +1,9 @@
 <template>
   <footer>
     <div class="container pos-relative">
-      <div class="d-flex justify-content-between align-items-center ic-position">
+      <div
+        class="d-flex justify-content-between align-items-center ic-position"
+      >
         <nav>
           <ul class="d-flex d-sm-none">
             <li class="mr-12"><a href="#">首頁</a></li>
@@ -13,13 +15,19 @@
         </nav>
         <ul class="d-flex">
           <li class="mr-8 mr-md-4">
-            <a href="#"><img src="@/assets/img/ic-social-fb.png" alt="facebook" /></a>
+            <a href="#"
+              ><img src="@/assets/img/ic-social-fb.png" alt="facebook"
+            /></a>
           </li>
           <li class="mr-8 mr-md-4">
-            <a href="#"><img src="@/assets/img/ic_social_ig.png" alt="instagram" /></a>
+            <a href="#"
+              ><img src="@/assets/img/ic_social_ig.png" alt="instagram"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="@/assets/img/ic_social_line.png" alt="line" /></a>
+            <a href="#"
+              ><img src="@/assets/img/ic_social_line.png" alt="line"
+            /></a>
           </li>
         </ul>
       </div>

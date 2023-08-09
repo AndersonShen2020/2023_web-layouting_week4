@@ -14,25 +14,36 @@
       <div class="container">
         <h2 class="text-align-center mb-6">用專業的心，做專業的事</h2>
         <div class="row flex-wrap">
-          <div class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center mb-md-6">
+          <div
+            class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center mb-md-6"
+          >
             <img src="@/assets/img/home-section2-1.png" alt="" />
             <p class="info-subtitle">單一價格</p>
             <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
           </div>
-          <div class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center mb-md-6">
+          <div
+            class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center mb-md-6"
+          >
             <img src="@/assets/img/home-section2-2.png" alt="" />
             <p class="info-subtitle">20 分鐘即可取件</p>
             <p>
-              為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20
-              分鐘即可完成。
+              為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快
+              20 分鐘即可完成。
             </p>
           </div>
-          <div class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center mb-md-6">
+          <div
+            class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center mb-md-6"
+          >
             <img src="@/assets/img/home-section2-3.png" alt="" />
             <p class="info-subtitle">安心售後服務</p>
-            <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+            <p>
+              我們提供長達 120
+              天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+            </p>
           </div>
-          <div class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center">
+          <div
+            class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center"
+          >
             <img src="@/assets/img/home-sectioin2-4.png" alt="" />
             <p class="info-subtitle">單一價格</p>
             <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
@@ -102,7 +113,9 @@
               <div class="d-flex flex-column justify-content-between p-4 h-205">
                 <div class="customer-info text-black">
                   <p class="2">凱倫</p>
-                  <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+                  <p>
+                    做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
+                  </p>
                 </div>
                 <p class="text-gray">2021/04/18</p>
               </div>
@@ -114,7 +127,9 @@
               <div class="d-flex flex-column justify-content-between p-4 h-205">
                 <div class="customer-info text-black">
                   <p class="2">悠悠</p>
-                  <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+                  <p>
+                    謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
+                  </p>
                 </div>
                 <p class="text-gray">2020/12/25</p>
               </div>
@@ -151,11 +166,21 @@
           <div class="row flex-column align-items-center text-black">
             <div class="col-6 col-md-10 col-sm-4 mb-4">
               <label class="mb-2" for="name">姓名</label>
-              <input class="d-block w-100" type="text" id="name" placeholder="陳小明" />
+              <input
+                class="d-block w-100"
+                type="text"
+                id="name"
+                placeholder="陳小明"
+              />
             </div>
             <div class="col-6 col-md-10 col-sm-4 mb-4">
               <label class="mb-2" for="phone">聯絡電話</label>
-              <input class="d-block w-100" type="tel" id="phone" placeholder="0912-345-678" />
+              <input
+                class="d-block w-100"
+                type="tel"
+                id="phone"
+                placeholder="0912-345-678"
+              />
             </div>
             <div class="col-6 col-md-10 col-sm-4 mb-4">
               <label class="mb-2" for="email">電子郵件</label>
@@ -178,7 +203,12 @@
               ></textarea>
             </div>
             <div class="col-6 col-md-10 col-sm-4 mb-12 mb-sm-6">
-              <input type="checkbox" class="input-check" name="check" id="check" />
+              <input
+                type="checkbox"
+                class="input-check"
+                name="check"
+                id="check"
+              />
               <label class="mb-2" for="check"
                 >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
               >
