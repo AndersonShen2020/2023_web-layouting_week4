@@ -13,42 +13,42 @@
     <div class="info bg-secondary text-secondary py-20 py-sm-40">
       <div class="container">
         <h2 class="text-align-center mb-6">用專業的心，做專業的事</h2>
-        <div class="row flex-wrap">
-          <div
+        <ul class="row flex-wrap">
+          <li
             class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center mb-md-6"
           >
             <img src="@/assets/img/home-section2-1.png" alt="" />
-            <p class="info-subtitle">單一價格</p>
-            <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
-          </div>
-          <div
+            <h3 class="info-subtitle">單一價格</h3>
+            <p class="text-black">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+          </li>
+          <li
             class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center mb-md-6"
           >
             <img src="@/assets/img/home-section2-2.png" alt="" />
-            <p class="info-subtitle">20 分鐘即可取件</p>
-            <p>
+            <h3 class="info-subtitle">20 分鐘即可取件</h3>
+            <p class="text-black">
               為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快
               20 分鐘即可完成。
             </p>
-          </div>
-          <div
+          </li>
+          <li
             class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center mb-md-6"
           >
             <img src="@/assets/img/home-section2-3.png" alt="" />
-            <p class="info-subtitle">安心售後服務</p>
-            <p>
+            <h3 class="info-subtitle">安心售後服務</h3>
+            <p class="text-black">
               我們提供長達 120
               天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
             </p>
-          </div>
-          <div
+          </li>
+          <li
             class="col-3 col-md-6 col-sm-4 d-flex flex-column align-items-center"
           >
             <img src="@/assets/img/home-sectioin2-4.png" alt="" />
-            <p class="info-subtitle">單一價格</p>
-            <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
-          </div>
-        </div>
+            <h3 class="info-subtitle">單一價格</h3>
+            <p class="text-black">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -59,15 +59,15 @@
         <div class="row flex-md-column align-items-md-center">
           <div class="col-4 col-md-6 col-sm-4 mb-md-6">
             <img class="mb-2" src="@/assets/img/home-section3-1.png" alt="" />
-            <p class="text-primary fz-48 fs-italic">OPTICAL</p>
+            <h3 class="text-primary fz-48 fs-italic">OPTICAL</h3>
           </div>
           <div class="col-4 col-md-6 col-sm-4 mb-md-6">
             <img class="mb-2" src="@/assets/img/home-section3-2.png" alt="" />
-            <p class="text-primary fz-48 fs-italic">SUNGLASSES</p>
+            <h3 class="text-primary fz-48 fs-italic">SUNGLASSES</h3>
           </div>
           <div class="col-4 col-md-6 col-sm-4">
             <img class="mb-2" src="@/assets/img/home-section3-3.png" alt="" />
-            <p class="text-primary fz-48 fs-italic">FUNCTIONAL</p>
+            <h3 class="text-primary fz-48 fs-italic">FUNCTIONAL</h3>
           </div>
         </div>
       </div>
@@ -80,11 +80,11 @@
         <div class="row flex-md-column align-items-md-center">
           <div class="col-6 col-md-12 col-sm-4 mb-md-6">
             <img src="@/assets/img/home-section4-1.png" alt="" />
-            <p class="text-primary fz-48 fs-italic w-100 bg-white">DOUBLE A+</p>
+            <h3 class="text-primary fz-48 fs-italic w-100 bg-white">DOUBLE A+</h3>
           </div>
           <div class="col-6 col-md-12 col-sm-4">
             <img src="@/assets/img/home-section4-2.png" alt="" />
-            <p class="text-primary fz-48 fs-italic w-100 bg-white">YOUTH</p>
+            <h3 class="text-primary fz-48 fs-italic w-100 bg-white">YOUTH</h3>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@
             <div class="col-6 col-md-10 col-sm-4 mb-4">
               <label class="mb-2" for="name">姓名</label>
               <input
-                class="d-block w-100"
+                class="d-block w-100 bg-transparent"
                 type="text"
                 id="name"
                 placeholder="陳小明"
@@ -176,7 +176,7 @@
             <div class="col-6 col-md-10 col-sm-4 mb-4">
               <label class="mb-2" for="phone">聯絡電話</label>
               <input
-                class="d-block w-100"
+                class="d-block w-100 bg-transparent"
                 type="tel"
                 id="phone"
                 placeholder="0912-345-678"
@@ -185,7 +185,7 @@
             <div class="col-6 col-md-10 col-sm-4 mb-4">
               <label class="mb-2" for="email">電子郵件</label>
               <input
-                class="d-block w-100"
+                class="d-block w-100 bg-transparent"
                 type="email"
                 id="email"
                 placeholder="example@email.com"
@@ -194,7 +194,7 @@
             <div class="col-6 col-md-10 col-sm-4 mb-4">
               <label class="mb-2" for="feedback">意見反應</label>
               <textarea
-                class="d-block w-100"
+                class="d-block w-100 bg-transparent"
                 name="feedback"
                 id="feedback"
                 cols="30"
@@ -205,7 +205,7 @@
             <div class="col-6 col-md-10 col-sm-4 mb-12 mb-sm-6">
               <input
                 type="checkbox"
-                class="input-check"
+                class="input-check bg-transparent"
                 name="check"
                 id="check"
               />

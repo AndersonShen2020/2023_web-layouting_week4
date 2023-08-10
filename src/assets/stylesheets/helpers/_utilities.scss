@@ -137,6 +137,10 @@ $margin-max: 25;
   background-color: $bg-color;
 }
 
+.bg-transparent {
+  background-color: transparent !important;
+}
+
 .text-white {
   color: white !important;
 }
